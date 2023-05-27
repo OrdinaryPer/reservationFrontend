@@ -1,0 +1,37 @@
+/* pages/admin/approve/approve.wxss */
+
+view.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 15%;
+  justify-content: center;
+  align-items: center;
+}
+text.head {
+  margin-bottom: 10%;
+}
+scroll-view {
+  width: 100%;
+  height: 100%;
+}
+view.detail {
+  width: 95%;
+  background-color: rgb(87, 233, 172);
+  margin-bottom: 20rpx;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx #888;
+}
+view.item {
+  display: inline-flex;
+  margin-bottom: 5rpx;
+  width: 100%;
+}
+text.pre {
+  width: 30%;
+  text-align: right;
+  margin-right: 3%;
+}
+view.item button {
+  padding: 0;
+  width: 30%;
+}

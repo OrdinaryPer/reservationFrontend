@@ -1,0 +1,32 @@
+<!--pages/user/apply/apply.wxml-->
+<view class="container">
+  <text class="head">预约信息</text>
+  <scroll-view scroll-y="true">
+   <view class="item" wx:for="{{rsv}}" wx:key="index">
+    <view class="sub">
+      <text class="pre">实验室名:</text>
+      <text class="fix">{{item.aLab.lab_name}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">位置:</text>
+      <text class="fix">{{item.aLab.lab_place}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">状态:</text>
+      <text class="fix">{{item.aLab.aState.state_name}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">开始时间:</text>
+      <text class="fix">{{item.start_time}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">结束时间:</text>
+      <text class="fix">{{item.end_time}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">操作:</text>
+      <button bindtap="cancel" data-labid="{{item.aLab.lab_id}}">取消</button>
+    </view>
+  </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,62 @@
+/* pages/login/login.wxss */
+
+view.container {
+  padding-top: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+text.head {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 10%;
+  font-size: 100%;
+}
+
+
+form {
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+view.item {
+  display: flex;
+  line-height: 15%;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 15rpx;
+}
+
+image {
+  width: 10%;
+  height:20px;
+  display: inline-flex;
+  padding-right: 3rpx;
+  padding-left: 3rpx;
+  margin: 0;
+  align-items:center;
+}
+
+input {
+  width: 50%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+form button {
+ background-color: rgb(87, 233, 172);
+ margin: 10%;
+ padding: 0;
+ line-height: 150%;
+ width: 50%;
+} 

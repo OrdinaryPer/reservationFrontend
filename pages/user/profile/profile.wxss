@@ -1,0 +1,45 @@
+/* pages/user/profile/profile.wxss */
+
+view.container {
+  display: flex;
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+view.sub {
+  width:80%;
+  height: 30%;
+  padding-top: 10%;
+  background-color: rgb(87, 233, 172);
+  margin-bottom: 20rpx;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx #888;
+}
+view.item {
+  justify-content: center;
+  margin-bottom: 20rpx;
+  width: 100%;
+  height: 20%;
+}
+text.pre {
+ display: inline-block;
+ margin-right: 3%;
+ width: 40%;
+ padding-right: 0;
+ text-align: right;
+ color: rgb(235, 255, 51);
+}
+text.value {
+  width: 60%;
+  color: #333;
+}
+text.head {
+  margin-bottom: 40rpx;
+}
+navigator {
+  width: 100%;
+  text-align: center;
+  color: rgb(78, 43, 235);
+}

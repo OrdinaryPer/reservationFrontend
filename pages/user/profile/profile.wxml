@@ -1,0 +1,19 @@
+<!--pages/user/profile/profile.wxml-->
+<view class="container">
+  <text class="head">个人信息</text>
+  <view class="sub">
+    <view class="item">
+   <text class="pre">用户名:</text>
+  <text class="value">{{user.user_username}}</text>
+  </view>
+  <view class="item">
+    <text class="pre">姓名:</text>
+  <text class="value">{{user.user_name}}</text>
+  </view>
+  <view class="item">
+    <text class="pre">电话:</text>
+  <text class="value">{{user.user_phone}}</text>
+  </view>
+  <navigator url="./update/update">修改密码</navigator>
+  </view>
+</view>

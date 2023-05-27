@@ -1,0 +1,21 @@
+<!--pages/admin/lab/update/update.wxml-->
+<view class="container">
+  <text class="head">修改实验室</text>
+  <view class="item" wx:for="{{lab}}" wx:key="index">
+  <form bindsubmit="submit">
+  <view class="sub">
+      <text>实验室名:</text>
+      <input  value="{{item.lab_name}}" type="text" name="name"/>
+    </view>
+    <view class="sub">
+      <text>位置:</text>
+      <input  value="{{item.lab_place}}" type="text" name="place"/>
+    </view>
+    <view class="sub">
+      <text>简介:</text>
+      <input  value="{{item.lab_detail}}" type="text" name="detail"/>
+    </view>
+    <button form-type="submit">修改</button>
+  </form>
+  </view>
+</view>

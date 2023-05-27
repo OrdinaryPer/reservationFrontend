@@ -1,0 +1,21 @@
+<!--pages/user/apply/order/order.wxml-->
+<view class="container">
+  <text class="head">预约实验室</text>
+  <view class="item">
+    <text class="ih">开始时间</text>
+    <picker mode="date" value=""  bindchange="dateStart">
+      点击选择开始日期:{{date.start}}</picker>
+    <picker mode="time" value="" start="07:00" end="20:00" bindchange="timeStart">
+      点击选择开始时间:{{time.start}}
+    </picker>
+  </view>
+  <view class="item">
+    <text class="ih">结束时间</text>
+    <picker mode="date" value="" start="" bindchange="dateEnd">
+      点击选择结束日期:{{date.end}}</picker>
+    <picker mode="time" value="" start="07:00" end="20:00" bindchange="timeEnd">
+      点击选择结束时间:{{time.end}}
+    </picker>
+  </view>
+  <button class="order" bindtap="order">预约</button>
+</view>

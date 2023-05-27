@@ -1,0 +1,21 @@
+<!--pages/user/profile/update/update.wxml-->
+<view class="container">
+  <text class="head">修改密码</text>
+  <form bindsubmit="submit">
+    <view class="integ">
+    <view class="item">
+    <text class="pre">密   码:</text>
+    <input type="password" placeholder="旧密码" name="old" />
+  </view>
+  <view class="item">
+   <text class="pre">新   密   码:</text>
+    <input type="password" placeholder="新密码" name="new1"  />
+  </view>
+  <view class="item">
+   <text class="pre">确认密码:</text>
+    <input type="password" placeholder="再次输入新密码" name="new2" />
+  </view>
+  <button form-type="submit">修改</button>
+    </view>
+  </form>
+</view>

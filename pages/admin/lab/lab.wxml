@@ -1,0 +1,36 @@
+<!--pages/admin/lab/lab.wxml-->
+<view class="container">
+  <text class="head">实验室</text>
+  <view class="find">
+    <form bindsubmit="submit">
+      <input placeholder="请输入实验室名" name="name" />
+      <button form-type="submit">查询</button>
+      <button bindtap="add">添加</button>
+    </form>
+  </view>
+  <scroll-view scroll-y="true">
+    <view class="item" wx:for="{{lab}}" wx:key="index">
+    <view class="sub">
+      <text class="pre">实验室名:</text>
+      <text>{{item.lab_name}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">简介:</text>
+      <text>{{item.lab_detail}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">位置:</text>
+      <text>{{item.lab_place}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">状态:</text>
+      <text>{{item.aState.state_name}}</text>
+    </view>
+    <view class="sub">
+      <text class="pre">操作:</text>
+      <button bindtap="update" data-index="{{item.lab_id}}">修改</button>
+      <button bindtap="deleteLab" data-index="{{item.lab_id}}" data-state="{{item.aState.state_name}}">删除</button>
+    </view>
+  </view>
+  </scroll-view>
+</view>

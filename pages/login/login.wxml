@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+
+<view class="container">
+  <text class="head">实验室预约</text>
+  <form bindsubmit="submit">
+    <view class="item">
+      <image src="../../img/user.png" />
+      <input placeholder="用户名" name="username" />
+    </view>
+    <view class="item">
+      <image src="../../img/pwd.png" />
+      <input type="password" placeholder="密码" name="pwd" />
+    </view>
+      <button form-type="submit">登陆</button>
+      <button bindtap="register">注册</button>
+  </form>
+</view>

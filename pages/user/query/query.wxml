@@ -1,0 +1,39 @@
+<!--pages/user/query/query.wxml-->
+
+<view class="container">
+  <text class="head">实验室</text>
+    <view class="search">
+   <form bindsubmit="submit">
+       <input placeholder="请输入实验室名" name="lab" />
+    <button form-type="submit">查询</button>
+   </form>
+  </view>
+  <view class="state">
+    <text>状态:</text>
+    <radio-group class="radio" bindchange="change">
+      <label class="ritem" wx:for="{{state}}" wx:key="index">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <scroll-view scroll-y="true">
+  <view class="item" wx:for="{{lab}}" wx:key="index">
+    <view class="sub">
+      <text class="pre">名称:</text> {{item.lab_name}}
+    </view>
+    <view class="sub">
+      <text class="pre">简介:</text> {{item.lab_detail}}
+    </view>
+    <view class="sub">
+      <text class="pre">位置:</text> {{item.lab_place}}
+    </view>
+    <view class="sub">
+      <text class="pre">状态:</text> {{item.aState.state_name}}
+    </view>
+    <view class="sub">
+      <text class="pre">操作:</text>
+      <button bindtap="order" data-id="{{item.lab_id}}">预约</button>
+    </view>
+  </view>
+  </scroll-view>
+</view>

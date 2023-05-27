@@ -1,0 +1,83 @@
+/* pages/user/query/query.wxss */
+view.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+text.head {
+  margin-bottom: 30rpx;
+}
+view.search {
+  width: 80%;
+  height: 10%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+form {
+  width: 100%;
+  height: 40%;
+  display: inline-block;
+  justify-content: center;
+}
+view.search input {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  margin-right: 5%;
+  border: 0;
+  border-radius: 10rpx;
+
+}
+view.search button {
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 100%;
+}
+view.item {
+  width: 95%;
+  background-color: rgb(87, 233, 172);
+  margin-bottom: 20rpx;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx #888;
+}
+text.pre {
+  text-align: center;
+  width: 20%;
+}
+view.sub {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 3rpx;
+  align-items: center;
+
+}
+view.sub button {
+  text-align: center;
+  width: 20%;
+  padding: 1rpx;
+  margin: 0;
+  font-size: 30rpx;
+}
+view.state {
+  display: inline-flex;
+  width: 80%;
+  margin-bottom: 30rpx;
+}
+view.state text {
+  margin-right: 10rpx;
+  width: 20%;
+  text-align: center;
+}
+scroll-view {
+  height: 100%;
+  display: flex;
+  width: 80%;
+}
